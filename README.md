@@ -1,0 +1,3 @@
+VIRTUAL SELF
+
+Currently, this project is in its extreme infancy. Probably not the best choice of wording, considering the type of game this is going to be, but...

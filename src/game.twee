@@ -1,0 +1,28 @@
+:: StoryTitle
+Virtual Self (v0.0.1)
+
+:: StorySettings
+ifid:a71fbc0a-1d24-43c7-95dc-776644b93526
+
+:: Story Stylesheet [stylesheet]
+
+
+:: Story JavaScript [script]
+//Sugarcube config
+console.log("Sugarcube Config...");
+Config.history.controls = false;
+Config.history.maxStates = 1;
+
+// Override navigation on death.
+Config.navigation.override = function (passageName) {
+};
+
+// let's listen for passage init events and handle appropriately
+$(document).on(':passageinit', function (ev) {
+    // clear the passage level cache, in case
+    Virtual.Tools.Cache.passageLevel.clear();
+});
+
+:: Start
+!!@@color:goldenRod;<<=Virtual.name>>@@ @@color:goldenRod;.version;(v<<=Virtual.Version.toString()>>)@@
+In a not so distant future, augmented reality has changed the way that everyone views the world. Large and garrish

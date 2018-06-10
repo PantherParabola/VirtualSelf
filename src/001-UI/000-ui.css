@@ -1,0 +1,11 @@
+#story-title {
+    color: goldenRod;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.version {
+    font-size: 0.75em;
+}
+#ui-bar-body>:not(:first-child) {
+    margin-top: 0.5rem;
+}
