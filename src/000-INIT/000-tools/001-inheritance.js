@@ -13,7 +13,7 @@
             , extendClass : function(parent, constructor, functions) {
                 constructor.prototype = Object.create(parent.prototype);
 
-                return this.createClass(contructor, functions);
+                return this.createClass(constructor, functions);
             }
         }
     });

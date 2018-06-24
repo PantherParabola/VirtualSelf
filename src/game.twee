@@ -25,4 +25,8 @@ $(document).on(':passageinit', function (ev) {
 
 :: Start
 !!@@color:goldenRod;<<=Virtual.name>>@@ @@color:goldenRod;.version;(v<<=Virtual.Version.toString()>>)@@
-In a not so distant future, augmented reality has changed the way that everyone views the world. Large and garrish
+This is a game heavily focused on @@color:slateGray;domination@@ and @@color:hotPink;feminization@@. It is your choice on whether these things happen consensually, or are forced upon your character as the story unfolds. These options are made clear as you make your choices, so that you will never experience situations unexpectedly.
+
+If you`re old enough to consume sexually explicit content, then please [[proceed to the game|Intro-Part-One]]. Otherwise, [[escape somewhere more safe|https://www.youtube.com/watch?v=aKULi72yUko]]
+
+[[Test|Testing-Variable-Setup]]

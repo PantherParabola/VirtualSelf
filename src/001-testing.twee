@@ -1,0 +1,31 @@
+:: Testing-Variable-Setup
+<<set $player = {
+    name : 'Chris Smith'
+    , traits : {}
+}>>
+Setup player with basic attributes.
+[[Change Variables|Testing-Variable-Changes]]
+
+:: Testing-Variable-Changes
+Sissy: <<if typeof $player.traits.sissy eq 'undefined'>>
+[[Yes|Testing-Variable-Changes][Virtual.Player.get().setTrait('sissy', true)]] / [[No|Testing-Variable-Changes][Virtual.Player.get().setTrait('sissy', false)]]
+/*
+[[Yes|Testing-Variable-Changes][$player.traits.sissy = true]] / [[No|Testing-Variable-Changes][$player.traits.sissy = false]]
+*/
+<<else>>
+    $player.traits.sissy
+<</if>>
+Trans: <<if typeof $player.traits.trans eq 'undefined'>>
+[[Yes|Testing-Variable-Changes][$player.traits.trans = true]] / [[No|Testing-Variable-Changes][$player.traits.trans = false]]
+<<else>>
+    $player.traits.trans
+<</if>>
+
+[[Debug-Variables]]
+
+:: Debug-Variables
+<<script>>
+console.log(Virtual.Player.get());
+<</script>>
+
+[[Change Variables|Testing-Variable-Changes]]
